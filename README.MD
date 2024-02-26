@@ -45,7 +45,7 @@ Define a decorator using the DECORATOR and END_DECORATOR macros:\
 ```c++
 DECORATOR(myDecorator) {
     // Pre-function logic
-    auto result = SUBJ()(args...); // Call the original function
+    auto result = SUBJ(); // Call the original function
     // Post-function logic
     return result;
 } END_DECORATOR
